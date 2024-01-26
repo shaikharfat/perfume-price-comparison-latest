@@ -2,7 +2,7 @@
     "version":2,
     "build":[
         {
-        "src":"perfume-price-comparison-latest/src/main/resources/site/js/vercel.json",
+        "src":"./main/resources/site/js/server.json",
         "use":"@vercel/node"
     }
     ],
