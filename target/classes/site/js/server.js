@@ -15,10 +15,10 @@ const mysql = require("mysql2");
 // Create a connection object with the user details
 const connectionPool = mysql.createPool({
   connectionLimit: 1,
-  host: "127.0.0.1",
-  user: "root",
-  password: "root",
-  database: "perfume",
+  host: DB_HOST,
+  user: DB_USER,
+  password: DB_PASSWORD,
+  database: DB_NAME,
   debug: false
 });
 
@@ -26,7 +26,7 @@ const connectionPool = mysql.createPool({
 app.use(express.static("../"));
 
 // Start the app listening on port 8080
-app.listen(8080);
+app.listen(3306);
 
 
 /**
