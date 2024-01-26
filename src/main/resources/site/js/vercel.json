@@ -1,0 +1,14 @@
+{
+    "version":2,
+    "build":[
+        {
+        "src":"perfume-price-comparison-latest/src/main/resources/site/js/vercel.json",
+        "use":"@vercel/node"
+    }
+    ],
+    "routes":[{
+        "src":"/(.*)",
+        "dest":"."
+    }
+    ]
+}
